@@ -6,37 +6,39 @@
 /*   By: ejanssen <ejanssen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 11:16:53 by ejanssen          #+#    #+#             */
-/*   Updated: 2022/10/24 13:18:17 by ejanssen         ###   ########.fr       */
+/*   Updated: 2022/10/24 15:12:39 by ejanssen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <unistd.h>
+
 /// @brief check if char is alphanum
 /// @param c 
 /// @return 
-int		ft_isalpha(char c);
+int		ft_isalpha(int c);
 
 /// @brief check if char is digit number
 /// @param c 
 /// @return 
-int		ft_isdigit(char c);
+int		ft_isdigit(int c);
 
 /// @brief check if char is alphanumeric
 /// @param c 
 /// @return 
-int		ft_isalnum(char c);
+int		ft_isalnum(int c);
 
 /// @brief check if char is ascii char
 /// @param c 
 /// @return 
-int		ft_isascii(char c);
+int		ft_isascii(int c);
 
 /// @brief check if char is printable
 /// @param c 
 /// @return 
-int		ft_isprint(char c);
+int		ft_isprint(int c);
 
 /// @brief calculate length of char
 /// @param c 
