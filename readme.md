@@ -16,3 +16,4 @@
 - [x] strlcat
 - [x] atoi
 - [x] strchr
+- [x] tests
