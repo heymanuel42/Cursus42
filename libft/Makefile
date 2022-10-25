@@ -6,7 +6,7 @@
 #    By: ejanssen <ejanssen@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 13:24:29 by ejanssen          #+#    #+#              #
-#    Updated: 2022/10/25 17:35:20 by ejanssen         ###   ########.fr        #
+#    Updated: 2022/10/25 17:56:46 by ejanssen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,7 @@ SRC				+= ft_strnstr.c
 SRC				+= ft_atoi.c
 
 #SRC				+= ft_calloc.c
-#SRC				+= ft_strdup.c
+SRC				+= ft_strdup.c
 
 DEPENDENCIES 		= libft.h
 OBJECTS				= $(SRC:.c=.o)
