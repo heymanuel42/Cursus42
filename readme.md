@@ -22,8 +22,8 @@
 - [x] strnstr
 - [x] strdup
 - [x] strncmp
-- [ ] ft_calloc.c
-- [ ] ft_memset.c
-- [ ] ft_memcpy.c
-- [ ] ft_memmove.c
+- [x] ft_calloc.c
+- [x] ft_memset.c
+- [x] ft_memcpy.c
+- [x] ft_memmove.c
 - [x] ft_bzero.c

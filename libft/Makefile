@@ -6,7 +6,7 @@
 #    By: ejanssen <ejanssen@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 13:24:29 by ejanssen          #+#    #+#              #
-#    Updated: 2022/10/25 18:10:36 by ejanssen         ###   ########.fr        #
+#    Updated: 2022/10/25 19:04:00 by ejanssen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,10 +28,10 @@ SRC				+= ft_strncmp.c
 SRC				+= ft_strnstr.c
 SRC				+= ft_atoi.c
 SRC				+= ft_strdup.c
-#SRC				+= ft_calloc.c
-#SRC				+= ft_memset.c
-#SRC				+= ft_memcpy.c
-#SRC				+= ft_memmove.c
+SRC				+= ft_calloc.c
+SRC				+= ft_memset.c
+SRC				+= ft_memcpy.c
+SRC				+= ft_memmove.c
 SRC				+= ft_bzero.c
 
 #PART TWO
