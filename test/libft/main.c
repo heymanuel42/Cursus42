@@ -6,7 +6,7 @@
 /*   By: ejanssen <ejanssen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:19:29 by ejanssen          #+#    #+#             */
-/*   Updated: 2022/10/25 13:47:07 by ejanssen         ###   ########.fr       */
+/*   Updated: 2022/10/25 13:57:49 by ejanssen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,12 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <stdlib.h>
+
 int	should_be_equal(char c);
 
 int	main(void)
 {
-	/*int	results;
+	int	results;
 
 	results = 0;
 	for(int i = 0; i < 100; i++)
@@ -30,7 +31,5 @@ int	main(void)
 		printf("All tests succeeded\n");
 	else
 		printf("There are some errors\n");
-	return (0);*/
-
-	printf("%d\n",ft_atoi("\t-10"));
+	return (0);
 }
