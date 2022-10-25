@@ -6,7 +6,7 @@
 #    By: ejanssen <ejanssen@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 13:24:29 by ejanssen          #+#    #+#              #
-#    Updated: 2022/10/25 17:56:46 by ejanssen         ###   ########.fr        #
+#    Updated: 2022/10/25 18:10:36 by ejanssen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,23 +20,32 @@ SRC				+= ft_isprint.c
 SRC				+= ft_strlen.c
 SRC				+= ft_toupper.c
 SRC				+= ft_tolower.c
-
-#SRC				+= ft_memset.c
-#SRC				+= ft_memcpy.c
-#SRC				+= ft_memmove.c
-#SRC				+= ft_bzero.c
-
 SRC				+= ft_strlcpy.c
 SRC				+= ft_strlcat.c
 SRC				+= ft_strchr.c
 SRC				+= ft_strrchr.c
-
 SRC				+= ft_strncmp.c
 SRC				+= ft_strnstr.c
 SRC				+= ft_atoi.c
-
-#SRC				+= ft_calloc.c
 SRC				+= ft_strdup.c
+#SRC				+= ft_calloc.c
+#SRC				+= ft_memset.c
+#SRC				+= ft_memcpy.c
+#SRC				+= ft_memmove.c
+SRC				+= ft_bzero.c
+
+#PART TWO
+#SRC				+= ft_substr.c
+#SRC				+= ft_strjoin.c
+#SRC				+= ft_strtrim.c
+#SRC				+= ft_strsplit.c
+#SRC				+= ft_str_itoa.c
+#SRC				+= ft_strmapi.c
+#SRC				+= ft_striteri.c
+#SRC				+= ft_putchar_fd.c
+#SRC				+= ft_putstr_fd.c
+#SRC				+= ft_putendl_fd.c
+#SRC				+= ft_put_nbr_fd.c
 
 DEPENDENCIES 		= libft.h
 OBJECTS				= $(SRC:.c=.o)
