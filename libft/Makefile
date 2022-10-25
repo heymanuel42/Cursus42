@@ -6,7 +6,7 @@
 #    By: ejanssen <ejanssen@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 13:24:29 by ejanssen          #+#    #+#              #
-#    Updated: 2022/10/24 15:16:23 by ejanssen         ###   ########.fr        #
+#    Updated: 2022/10/25 14:07:13 by ejanssen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,28 +26,28 @@ SRC				+= ft_tolower.c
 #SRC				+= ft_memmove.c
 #SRC				+= ft_bzero.c
 
-#SRC				+= ft_strlcpy.c
-#SRC				+= ft_strlcat.c
-#SRC				+= ft_strchr.c
+SRC				+= ft_strlcpy.c
+SRC				+= ft_strlcat.c
+SRC				+= ft_strchr.c
 #SRC				+= ft_strncmp.c
 #SRC				+= ft_strnstr.c
-#SRC				+= ft_atoi.c
+SRC				+= ft_atoi.c
 
 #SRC				+= ft_calloc.c
 #SRC				+= ft_strdup.c
 
 DEPENDENCIES 	= libft.h
 OBJECTS				= $(SRC:.c=.o)
-LIB				= libft.a
+NAME				= libft.a
 
 .PHONY: all
-all: $(LIB)
+all: $(NAME)
 
 .c.o:
 	$(CC) -c $(CFLAGS) -o $@ $< $(INC)
 
-.PHONY: $(LIB)
-$(LIB): $(OBJECTS)
+.PHONY: $(NAME)
+$(NAME): $(OBJECTS)
 	ar r $@ $^
 
 .PHONY: clean
@@ -56,7 +56,7 @@ clean:
 
 .PHONY: fclean
 fclean: clean
-	rm -f $(LIB)
+	rm -f $(NAME)
 
 .PHONY: re
 re : fclean all

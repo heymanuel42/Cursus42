@@ -6,11 +6,16 @@
 /*   By: ejanssen <ejanssen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 15:14:55 by ejanssen          #+#    #+#             */
-/*   Updated: 2022/10/24 15:16:02 by ejanssen         ###   ########.fr       */
+/*   Updated: 2022/10/25 13:05:18 by ejanssen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_tolower(int c)
 {
-	return (c + '0');
+	if (ft_isalpha(c) && (c >= 'A' && c <= 'Z'))
+		return (c + 32);
+	else
+		return (c);
 }

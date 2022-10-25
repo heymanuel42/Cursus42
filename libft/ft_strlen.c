@@ -6,13 +6,13 @@
 /*   By: ejanssen <ejanssen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 14:22:31 by ejanssen          #+#    #+#             */
-/*   Updated: 2022/10/24 14:23:41 by ejanssen         ###   ########.fr       */
+/*   Updated: 2022/10/25 11:04:30 by ejanssen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlen(char *s)
+size_t	ft_strlen(const char *s)
 {
 	int	length;
 

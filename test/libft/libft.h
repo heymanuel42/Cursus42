@@ -6,7 +6,7 @@
 /*   By: ejanssen <ejanssen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 11:16:53 by ejanssen          #+#    #+#             */
-/*   Updated: 2022/10/25 14:31:43 by ejanssen         ###   ########.fr       */
+/*   Updated: 2022/10/24 15:12:39 by ejanssen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ int		ft_isprint(int c);
 /// @brief calculate length of char
 /// @param c 
 /// @return 
-size_t	ft_strlen(const char *c);
+int		ft_strlen(char *c);
 
 /// @brief fill a bte string with a byte value
 /// @param b 
