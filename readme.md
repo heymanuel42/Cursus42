@@ -17,8 +17,8 @@
 - [x] atoi
 - [x] strchr
 - [x] tests
-
+>@home
 - [x] strrchr
 - [x] strnstr
-- [ ] strdup
+- [x] strdup
 - [x] strncmp
