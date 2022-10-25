@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ejanssen <ejanssen@student.42.fr>          +#+  +:+       +#+         #
+#    By: ejanssen <ejanssen@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 13:24:29 by ejanssen          #+#    #+#              #
-#    Updated: 2022/10/25 14:07:13 by ejanssen         ###   ########.fr        #
+#    Updated: 2022/10/25 17:35:20 by ejanssen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,14 +29,16 @@ SRC				+= ft_tolower.c
 SRC				+= ft_strlcpy.c
 SRC				+= ft_strlcat.c
 SRC				+= ft_strchr.c
-#SRC				+= ft_strncmp.c
-#SRC				+= ft_strnstr.c
+SRC				+= ft_strrchr.c
+
+SRC				+= ft_strncmp.c
+SRC				+= ft_strnstr.c
 SRC				+= ft_atoi.c
 
 #SRC				+= ft_calloc.c
 #SRC				+= ft_strdup.c
 
-DEPENDENCIES 	= libft.h
+DEPENDENCIES 		= libft.h
 OBJECTS				= $(SRC:.c=.o)
 NAME				= libft.a
 

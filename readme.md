@@ -17,3 +17,8 @@
 - [x] atoi
 - [x] strchr
 - [x] tests
+
+- [x] strrchr
+- [x] strnstr
+- [ ] strdup
+- [x] strncmp

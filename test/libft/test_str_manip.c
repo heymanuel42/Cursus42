@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_str_manip.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ejanssen <ejanssen@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ejanssen <ejanssen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:53:54 by ejanssen          #+#    #+#             */
-/*   Updated: 2022/10/25 15:25:05 by ejanssen         ###   ########.fr       */
+/*   Updated: 2022/10/25 17:30:25 by ejanssen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <bsd/string.h>
 int	test_strlcpy(void)
 {
 	char	dst[300] = "salut";
@@ -63,11 +63,20 @@ int	test_atoi(void)
 int	test_strchr(void)
 {
 	return ((
-			strcmp(ft_strchr("salut", 'a'), strchr("salut", 'a'))
+			/*strcmp(ft_strchr("salut", 'a'), strchr("salut", 'a'))
 			&& strcmp(ft_strchr("salut", 'x'), strchr("salut", 'x'))
 			&& strcmp(ft_strchr("salut", 200), strchr("salut", 200))
 			&& strcmp(ft_strchr("\0f", 'f'), strchr("\0", 'f'))
 			&& strcmp(ft_strchr("\0hello", '\0'), strchr("\0hello", '\0'))
-			&& strcmp(ft_strchr("retour\tsalut\n", '\t'), strchr("retour\tsalut\n", '\t'))
+			&& strcmp(ft_strchr("retour\tsalut\n", '\t'), strchr("retour\tsalut\n", '\t'))*/0
+		));
+}
+
+int test_strncmp(void)
+{
+	return (!(
+			ft_strncmp("\2", "\0", 1) == strncmp("\2", "\0", 1)
+			|| ft_strncmp("test", "tes", 3) == strncmp("test", "tes", 3)
+			|| ft_strncmp("test", "tes", 5) == strncmp("test", "tes", 5)
 		));
 }
