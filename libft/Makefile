@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ejanssen <ejanssen@student.42lausanne.c    +#+  +:+       +#+         #
+#    By: ejanssen <ejanssen@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 13:24:29 by ejanssen          #+#    #+#              #
-#    Updated: 2022/10/25 19:49:16 by ejanssen         ###   ########.fr        #
+#    Updated: 2022/10/26 10:19:13 by ejanssen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,9 +44,9 @@ SRC				+= ft_memcmp.c
 #SRC				+= ft_str_itoa.c
 #SRC				+= ft_strmapi.c
 #SRC				+= ft_striteri.c
-#SRC				+= ft_putchar_fd.c
-#SRC				+= ft_putstr_fd.c
-#SRC				+= ft_putendl_fd.c
+SRC				+= ft_putchar_fd.c
+SRC				+= ft_putstr_fd.c
+SRC				+= ft_putendl_fd.c
 #SRC				+= ft_put_nbr_fd.c
 
 DEPENDENCIES 		= libft.h
