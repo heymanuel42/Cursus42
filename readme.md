@@ -32,7 +32,7 @@
 - [x] ft_putchar_fd
 - [x] ft_putstr_fd
 - [x] ft_putendl_fd
-- [ ] ft_putnbr_fd
+- [x] ft_putnbr_fd
 - [x] ft_substr
 - [ ] ft_strjoin
 - [ ] ft_strtrim
