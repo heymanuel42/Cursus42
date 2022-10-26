@@ -33,10 +33,11 @@
 - [x] ft_putstr_fd
 - [x] ft_putendl_fd
 - [x] ft_putnbr_fd
-- [x] ft_substr
-- [x] ft_strjoin
-- [ ] ft_strtrim
 - [x] ft_split
 - [x] ft_itoa
+>@home
+- [x] ft_strjoin
+- [x] ft_substr
+- [x] ft_strtrim
 - [ ] ft_strmapi
 - [ ] ft_striteri

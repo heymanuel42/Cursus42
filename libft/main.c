@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ejanssen <ejanssen@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ejanssen <ejanssen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 10:33:35 by ejanssen          #+#    #+#             */
-/*   Updated: 2022/10/26 16:45:36 by ejanssen         ###   ########.fr       */
+/*   Updated: 2022/10/26 19:18:25 by ejanssen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,10 @@
 
 int	main(void)
 {
-	char s1[] = "salut";
-	char s2[] = "hello";
+	char test[] = "xxxxHelloxxxx";
 	char *res;
 
-	res = ft_strjoin(s1,s2);
+	res = ft_strtrim(test, "x");
 	printf("%s\n",res);
 	free(res);
 	return (0);
