@@ -6,7 +6,7 @@
 #    By: ejanssen <ejanssen@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 13:24:29 by ejanssen          #+#    #+#              #
-#    Updated: 2022/10/26 19:27:45 by ejanssen         ###   ########.fr        #
+#    Updated: 2022/10/26 19:34:53 by ejanssen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,7 +43,7 @@ SRC				+= ft_strtrim.c
 SRC				+= ft_split.c
 SRC				+= ft_itoa.c
 SRC				+= ft_strmapi.c
-#SRC				+= ft_striteri.c
+SRC				+= ft_striteri.c
 SRC				+= ft_putchar_fd.c
 SRC				+= ft_putstr_fd.c
 SRC				+= ft_putendl_fd.c

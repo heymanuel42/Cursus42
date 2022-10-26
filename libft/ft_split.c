@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ejanssen <ejanssen@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ejanssen <ejanssen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 19:01:44 by ejanssen          #+#    #+#             */
-/*   Updated: 2022/10/26 16:01:53 by ejanssen         ###   ########.fr       */
+/*   Updated: 2022/10/26 21:16:15 by ejanssen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,13 +92,13 @@ char	**ft_split(char const *s, char c)
 	sub = NULL;
 	nwords = count_words(s, c);
 	array = (char **)malloc((nwords + 1) * sizeof(char *));
+	if (array == NULL)
+		return (NULL);
 	if (nwords == 0)
 	{
 		array[0] = NULL;
 		return (array);
 	}
-	if (array == NULL)
-		return (NULL);
 	i = 0;
 	while (nwords > 0)
 	{
