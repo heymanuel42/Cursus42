@@ -6,7 +6,7 @@
 #    By: ejanssen <ejanssen@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 13:24:29 by ejanssen          #+#    #+#              #
-#    Updated: 2022/10/26 13:01:13 by ejanssen         ###   ########.fr        #
+#    Updated: 2022/10/26 13:34:08 by ejanssen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,7 +47,7 @@ SRC				+= ft_itoa.c
 SRC				+= ft_putchar_fd.c
 SRC				+= ft_putstr_fd.c
 SRC				+= ft_putendl_fd.c
-#SRC				+= ft_put_nbr_fd.c
+SRC				+= ft_putnbr_fd.c
 
 DEPENDENCIES 		= libft.h
 OBJECTS				= $(SRC:.c=.o)
