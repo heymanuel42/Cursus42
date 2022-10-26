@@ -6,7 +6,7 @@
 /*   By: ejanssen <ejanssen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 10:33:35 by ejanssen          #+#    #+#             */
-/*   Updated: 2022/10/26 16:02:44 by ejanssen         ###   ########.fr       */
+/*   Updated: 2022/10/26 16:45:36 by ejanssen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,22 +16,14 @@
 #include <stdlib.h>
 #include <string.h>
 
-int	main(int argc, char **argv)
+int	main(void)
 {
-	char t[] = "HelloxxxxWorldxxxS";
-	char **s = ft_split(t, 'a');
-	int i = 0;
+	char s1[] = "salut";
+	char s2[] = "hello";
+	char *res;
 
-	while (s[i] != NULL)
-	{
-		printf("%s\n", s[i]);
-		i++;
-	}
-	i = 0;
-	while (s[i] != NULL)
-	{
-		free(s[i]);
-		i++;
-	}
+	res = ft_strjoin(s1,s2);
+	printf("%s\n",res);
+	free(res);
 	return (0);
 }

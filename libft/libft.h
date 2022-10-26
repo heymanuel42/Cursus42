@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ejanssen <ejanssen@student.42lausanne.c    +#+  +:+       +#+        */
+/*   By: ejanssen <ejanssen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 11:16:53 by ejanssen          #+#    #+#             */
-/*   Updated: 2022/10/26 09:25:39 by ejanssen         ###   ########.fr       */
+/*   Updated: 2022/10/26 16:10:50 by ejanssen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -162,7 +162,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 /// @param s1
 /// @param s2
 /// @return new string NULL if the allocation fails
-char	*ft_strjoin(char *const *s1, char const *s2);
+char	*ft_strjoin(char const *s1, char const *s2);
 
 /// @brief Allocates and returns a copy of s1 with characters specified in set
 /// removed from the beginning and end of the string
