@@ -6,7 +6,7 @@
 /*   By: ejanssen <ejanssen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 11:16:53 by ejanssen          #+#    #+#             */
-/*   Updated: 2022/10/25 18:51:04 by ejanssen         ###   ########.fr       */
+/*   Updated: 2022/10/26 09:25:39 by ejanssen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -149,4 +149,72 @@ void	*ft_calloc(size_t count, size_t size);
 /// @param s1
 /// @return
 char	*ft_strdup(const char *s1);
+
+/// @brief Allocates and returns a substring from the string 's'
+/// @param s
+/// @param start
+/// @param len
+/// @return substring NULL if allocation fails
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+
+/// @brief Allocates and returns a new string wich is the result of
+/// of the concatenation of s1 and s2
+/// @param s1
+/// @param s2
+/// @return new string NULL if the allocation fails
+char	*ft_strjoin(char *const *s1, char const *s2);
+
+/// @brief Allocates and returns a copy of s1 with characters specified in set
+/// removed from the beginning and end of the string
+/// @param s1
+/// @param set
+/// @return the trimmed string NULL if the allocation fails
+char	*ft_strtrim(char const *s1, char const *set);
+
+/// @brief Allocates and returns an array of string split by s and by NULL
+/// @param s
+/// @param c
+/// @return the array of new strings resulting from the split
+/// NULL if the allocation fails
+char	**ft_split(char const *s, char c);
+
+/// @brief Allocates and returns a string representing
+/// the integer(negatives includeds)
+/// @param n
+/// @return the string representing the integer, NULL if allocation fails
+char	*ft_itoa(int n);
+
+/// @brief Applies function f to each char of s, passing index as first argument
+/// to create new string with malloc
+/// @param s
+/// @param f
+/// @return string created of successive application of f
+/// NULL  if allocation fails
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+
+/// @brief Applies function f to each char of s char of f passed
+/// by address
+/// @param s
+/// @param f
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+
+/// @brief output c to given fd
+/// @param c
+/// @param fd
+void	ft_putchar_fd(char c, int fd);
+
+/// @brief output s to given fd
+/// @param s
+/// @param fd
+void	ft_putstr_fd(char *s, int fd);
+
+/// @brief outputs a string followed by a new line to the given fd
+/// @param s
+/// @param fd
+void	ft_putendl_fd(char *s, int fd);
+
+/// @brief outputs a given integer to the given fd
+/// @param n
+/// @param fd
+void	ft_putnbr_fd(int n, int fd);
 #endif
