@@ -39,5 +39,5 @@
 - [x] ft_strjoin
 - [x] ft_substr
 - [x] ft_strtrim
-- [ ] ft_strmapi
+- [x] ft_strmapi
 - [ ] ft_striteri
