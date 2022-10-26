@@ -29,14 +29,14 @@
 - [x] ft_bzero.c
 
 ## 26/10/2022
-- [ ] ft_putchar_fd
-- [ ] ft_putstr_fd
-- [ ] ft_putendl_fd
+- [x] ft_putchar_fd
+- [x] ft_putstr_fd
+- [x] ft_putendl_fd
 - [ ] ft_putnbr_fd
-- [ ] ft_substr
+- [x] ft_substr
 - [ ] ft_strjoin
 - [ ] ft_strtrim
 - [ ] ft_split
-- [ ] ft_itoa
+- [x] ft_itoa
 - [ ] ft_strmapi
 - [ ] ft_striteri
