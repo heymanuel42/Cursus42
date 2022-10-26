@@ -6,7 +6,7 @@
 /*   By: ejanssen <ejanssen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 10:33:35 by ejanssen          #+#    #+#             */
-/*   Updated: 2022/10/26 13:26:50 by ejanssen         ###   ########.fr       */
+/*   Updated: 2022/10/26 16:02:44 by ejanssen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,20 @@
 
 int	main(int argc, char **argv)
 {
-	char	*res;
-	char	str[] = "lorem ipsum dolor sit amet";
+	char t[] = "HelloxxxxWorldxxxS";
+	char **s = ft_split(t, 'a');
+	int i = 0;
 
-	//res = ft_substr(str, atoi(argv[2]), atoi(argv[3]));
-	res = ft_substr("hola", 0, 18446744073709551615);
-	printf("%s %lu\n",res, ft_strlen(res));
-	free(res);
+	while (s[i] != NULL)
+	{
+		printf("%s\n", s[i]);
+		i++;
+	}
+	i = 0;
+	while (s[i] != NULL)
+	{
+		free(s[i]);
+		i++;
+	}
 	return (0);
 }
