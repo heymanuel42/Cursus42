@@ -1,29 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ejanssen <ejanssen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/25 14:03:45 by ejanssen          #+#    #+#             */
-/*   Updated: 2022/10/27 11:56:24 by ejanssen         ###   ########.fr       */
+/*   Created: 2022/10/27 10:27:13 by ejanssen          #+#    #+#             */
+/*   Updated: 2022/10/27 10:31:50 by ejanssen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+int	ft_lstsize(t_list *lst)
 {
-	size_t	i;
+	int		size;
 
-	i = 0;
-	while (s[i] != '\0')
+	size = 0;
+	if (lst == NULL)
+		return (size);
+	while (lst != NULL)
 	{
-		if (s[i] == (unsigned char)c)
-			return ((char *)(s + i));
-		i++;
+		size++;
+		lst = lst->next;
 	}
-	if (i == ft_strlen(s) && (char)c != '\0')
-		return (NULL);
-	return ((char *)(s + i));
+	return (size);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ejanssen <ejanssen@student.42lausanne.c    +#+  +:+       +#+        */
+/*   By: ejanssen <ejanssen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 11:16:53 by ejanssen          #+#    #+#             */
-/*   Updated: 2022/10/26 21:33:17 by ejanssen         ###   ########.fr       */
+/*   Updated: 2022/10/27 10:55:56 by ejanssen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -264,13 +264,13 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*));
 /// the pointer to the list must be set to NULL
 /// @param lst
 /// @param del
-void	ft_listclear(t_list **lst, void (*del)(void *));
+void	ft_lstclear(t_list **lst, void (*del)(void *));
 
 /// @brief Iterates the list lst and applies the function f on the content
 /// of the node
 /// @param lst
 /// @param f
-void	ft_listiter(t_list *lst, void (*f)(void*));
+void	ft_lstiter(t_list *lst, void (*f)(void*));
 
 /// @brief iterates the list lst and applies the function f on the content
 /// of each node. Creates a newlist resulting of the successive application

@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ejanssen <ejanssen@student.42lausanne.c    +#+  +:+       +#+         #
+#    By: ejanssen <ejanssen@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 13:24:29 by ejanssen          #+#    #+#              #
-#    Updated: 2022/10/26 19:34:53 by ejanssen         ###   ########.fr        #
+#    Updated: 2022/10/27 11:59:03 by ejanssen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,8 +49,21 @@ SRC				+= ft_putstr_fd.c
 SRC				+= ft_putendl_fd.c
 SRC				+= ft_putnbr_fd.c
 
+#BONUS
+SRCBONUS				= ft_lstnew.c
+SRCBONUS				+= ft_lstadd_front.c
+SRCBONUS				+= ft_lstsize.c
+SRCBONUS				+= ft_lstlast.c
+SRCBONUS				+= ft_lstadd_back.c
+SRCBONUS				+= ft_lstdelone.c
+SRCBONUS				+= ft_lstclear.c
+SRCBONUS				+= ft_lstiter.c
+SRCBONUS				+= ft_lstmap.c
+SRCBONUS				+= $(SRC)
+
 DEPENDENCIES 		= libft.h
 OBJECTS				= $(SRC:.c=.o)
+OBJECS_BONUS		= $(SRCBONUS:.c=.o)
 NAME				= libft.a
 
 .PHONY: all
@@ -59,13 +72,17 @@ all: $(NAME)
 .c.o:
 	$(CC) -c $(CFLAGS) -o $@ $< $(INC)
 
+.PHONY: bonus
+bonus: $(OBJECS_BONUS)
+	ar r $(NAME) $^
+
 .PHONY: $(NAME)
 $(NAME): $(OBJECTS)
 	ar r $@ $^
 
 .PHONY: clean
 clean:
-	rm -f $(OBJECTS)
+	rm -f $(OBJECTS) $(OBJECS_BONUS)
 
 .PHONY: fclean
 fclean: clean
