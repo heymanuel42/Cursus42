@@ -16,11 +16,11 @@ Moulinette OK for mandatory parts and bonus parts
 
 - [x] read about variable arguments
 - [ ] write basic strings
-- [ ] %c -> print single char
-- [ ] %s -> print a string
+- [x] %c -> print single char
+- [x] %s -> print a string
 - [ ] %p -> print pointer in hex format
-- [ ] %d -> print decimal (base10)
-- [ ] %i -> print an integer (base10)
+- [x] %d -> print decimal (base10)
+- [x] %i -> print an integer (base10)
 - [ ] %u -> print an unsigned decimal (base10)
 - [ ] %x -> print number in hex format(base16) lowercase
 - [ ] %X -> print a number in hex format(base 16) uppercase
