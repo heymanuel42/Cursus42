@@ -14,7 +14,7 @@ Moulinette OK for mandatory parts and bonus parts
 ## Mandatory
 > bonus first approach
 
-- [ ] read about variable arguments
+- [x] read about variable arguments
 - [ ] write basic strings
 - [ ] %c -> print single char
 - [ ] %s -> print a string
@@ -29,7 +29,7 @@ Moulinette OK for mandatory parts and bonus parts
 ## Bonus
 - [ ] flag - justify left
 - [ ] flag 0 leading zeroes no space padding if - and zero appear ignore 0
-- [ ] flag . 
+- [ ] flag .
 - [ ] flag # add 0 for octal and 0x/ 0X for hexadecimal (%x, %X)
 - [ ] flag \space space is added before the result
 - [ ] flag + force display of plus or minus before result
