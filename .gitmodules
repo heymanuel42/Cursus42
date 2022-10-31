@@ -8,3 +8,8 @@
 	url = git@github.com:heymanuel42/printf.git
 	update = checkout
 	branch = master
+[submodule "getnextline"]
+	path = getnextline
+	url = ./getnextline
+	update = checkout
+	branch = master
