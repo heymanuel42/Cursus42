@@ -25,5 +25,5 @@ Moulinette OK for mandatory parts and bonus parts
 - [x] most of the tests succeed
 - [ ] open-close-open
 - [ ] big line no new line
-- [ ] norminette compliant
+- [x] norminette compliant
 
