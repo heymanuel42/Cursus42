@@ -21,3 +21,9 @@ Moulinette OK for mandatory parts and bonus parts
 # Getnextline
 ### 1/11/2022
 - [x] utilities (strcopy, dup, ...)
+### 2/11/2022
+- [x] most of the tests succeed
+- [ ] open-close-open
+- [ ] big line no new line
+- [ ] norminette compliant
+
