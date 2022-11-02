@@ -10,6 +10,6 @@
 	branch = master
 [submodule "getnextline"]
 	path = getnextline
-	url = git@github.com:heymanuel42/printf.git
+	url = git@github.com:heymanuel42/getnextline.git
 	update = checkout
 	branch = master
