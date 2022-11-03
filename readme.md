@@ -23,7 +23,7 @@ Moulinette OK for mandatory parts and bonus parts
 - [x] utilities (strcopy, dup, ...)
 ### 2/11/2022
 - [x] most of the tests succeed
-- [ ] open-close-open
-- [ ] big line no new line
 - [x] norminette compliant
-
+### 3/11/2022
+- [x] resolved timeouts
+- [ ] await correction
