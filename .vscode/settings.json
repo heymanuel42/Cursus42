@@ -9,6 +9,7 @@
         "ft_printf.h": "c",
         "random": "c",
         "unistd.h": "c",
-        "streambuf": "c"
+        "streambuf": "c",
+        "get_next_line.h": "c"
     }
 }
