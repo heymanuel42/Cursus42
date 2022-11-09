@@ -10,6 +10,10 @@
         "random": "c",
         "unistd.h": "c",
         "streambuf": "c",
-        "get_next_line.h": "c"
+        "get_next_line.h": "c",
+        "get_next_line_bonus.h": "c",
+        "stdio.h": "c",
+        "signal.h": "c",
+        "sigaction.h": "c"
     }
 }

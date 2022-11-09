@@ -13,3 +13,6 @@
 	url = git@github.com:heymanuel42/getnextline.git
 	update = checkout
 	branch = master
+[submodule "minitalk"]
+	path = minitalk
+	url = git@github.com:heymanuel42/minitalk.git
