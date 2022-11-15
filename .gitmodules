@@ -16,3 +16,9 @@
 [submodule "minitalk"]
 	path = minitalk
 	url = git@github.com:heymanuel42/minitalk.git
+[submodule "push_swap/libft"]
+	path = push_swap/libft
+	url = git@github.com:heymanuel42/libft.git
+[submodule "push_swap/printf"]
+	path = push_swap/printf
+	url = git@github.com:heymanuel42/printf.git
