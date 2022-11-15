@@ -6,7 +6,7 @@
 /*   By: ejanssen <ejanssen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 10:54:33 by ejanssen          #+#    #+#             */
-/*   Updated: 2022/11/15 13:21:29 by ejanssen         ###   ########.fr       */
+/*   Updated: 2022/11/15 14:17:54 by ejanssen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,12 +28,10 @@ int	check_is_numeric(const char *arg)
 	return (0);
 }
 
-t_stack	*build_stack(int n, char **data, int id)
+t_stack	*create_stack(int n, int id)
 {
-	int		i;
 	t_stack	*stack;
 
-	i = 0;
 	stack = malloc(sizeof(t_stack));
 	if (stack == NULL)
 		return (NULL);
@@ -46,6 +44,18 @@ t_stack	*build_stack(int n, char **data, int id)
 		free(stack);
 		return (NULL);
 	}
+	return (stack);
+}
+
+t_stack	*build_stack(int n, char **data, int id)
+{
+	int		i;
+	t_stack	*stack;
+
+	i = 0;
+	stack = create_stack(n, id);
+	if (!stack)
+		return (NULL);
 	if (data == NULL)
 	{
 		stack->nb_el = 0;
@@ -78,19 +88,14 @@ int	main(int argc, char **argv)
 		ft_printf("error\n");
 		return (-1);
 	}
-	print_stack(*a);
-	print_stack(*b);
 	push(a, b, 1);
 	push(a, b, 1);
 	push(a, b, 1);
-	print_stack(*a);
-	print_stack(*b);
-	rr_rotate(a, b);
-	print_stack(*a);
-	print_stack(*b);
-	sswap(a, b);
-	print_stack(*a);
-	print_stack(*b);
+	push(a, b, 1);
+	push(b, a, 1);
+	push(b, a, 1);
+	push(b, a, 1);
+	push(b, a, 1);
 	free(a);
 	free(b);
 	return (0);

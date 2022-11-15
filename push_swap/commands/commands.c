@@ -6,7 +6,7 @@
 /*   By: ejanssen <ejanssen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 11:15:56 by ejanssen          #+#    #+#             */
-/*   Updated: 2022/11/15 13:17:32 by ejanssen         ###   ########.fr       */
+/*   Updated: 2022/11/15 14:15:11 by ejanssen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,24 +30,12 @@ int	swap(t_stack *stack, int print)
 
 int	push(t_stack *from, t_stack *to, int print)
 {
-	int	id;
-
-	id = to->nb_el;
 	if (from->nb_el > 0)
 	{
-		while (id > 0 && to->nb_el < to->size)
-		{
-			to->data[(id)] = to->data[id - 1];
-			id--;
-		}
-		to->data[0] = from->data[0];
+		to->data[to->nb_el] = from->data[0];
 		to->nb_el++;
-		id = 0;
-		while (id < from->nb_el && from->nb_el > 0)
-		{
-			from->data[id] = from->data[id + 1];
-			id++;
-		}
+		rrotate(to, 0);
+		rotate(from, 0);
 		from->nb_el--;
 		if (print)
 		{
